@@ -1,0 +1,16 @@
+---
+.title = "Traverse City Series",
+.date = @date("2023-09-01T00:00:00"),
+.author = "Danielle Freeman",
+.layout = "series.shtml",
+.description = "Coming Soon! - Scenic landscapes from Traverse City, Michigan; 2022–2025",
+.tags = ["ceramic", "still life"],
+.draft = false,
+.custom = {
+    .year_range = "2022–2025",
+    .medium = "Ceramic",
+    .image = "stitch-flower.jpg",
+},
+---
+
+Series description goes here.

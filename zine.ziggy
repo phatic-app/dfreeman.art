@@ -1,0 +1,17 @@
+Site {
+    .title = "Danielle Freeman",
+    .host_url = "https://dfreeman.art",
+    .content_dir_path = "content",
+    .layouts_dir_path = "layouts",
+    .assets_dir_path = "assets",
+    .static_assets = [
+        "favicon.ico",
+        "Temml.woff2",
+        "bird.jpg",
+        "flower.jpg",
+        "mosaic-girl.jpg",
+        "still-life.jpg",
+        "stitch-flower.jpg",
+        "el-art-fest.jpg",
+],
+}

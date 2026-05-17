@@ -1,0 +1,19 @@
+---
+.title = "Mosaic Bowl",
+.date = @date("2025-02-01T00:00:00"),
+.author = "Danielle Freeman",
+.layout = "product.shtml",
+.description = "Handmade ceramic bowl with inlaid glass mosaic",
+.tags = ["glass", "ceramic", "functional"],
+.draft = false,
+.custom = {
+    .price = "Coming soon!",
+    .status = "available",
+    .medium = "Stoneware with glass mosaic inlay",
+    .dimensions = "7×4 in",
+    .buy_url = "https://venmo.com/u/dfreemanart",
+    .image = "mosaic-girl.jpg",
+},
+---
+
+Stoneware bowl with hand-cut glass tesserae set in the exterior. Each piece unique.

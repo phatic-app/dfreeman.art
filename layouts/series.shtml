@@ -1,0 +1,60 @@
+<extend template="base.shtml">
+
+<title id="title" :text="$page.title"></title>
+
+<head id="head">
+</head>
+
+<main id="main">
+	<ctx :if="$page.custom.get?('image')">
+		<img class="product-image" src="$site.asset($if).link()" alt="$page.title">
+	</ctx>
+
+	<h1 :text="$page.title"></h1>
+
+	<dl class="series-meta">
+		<ctx :if="$page.custom.get?('medium')">
+			<dt>Medium</dt>
+			<dd :text="$if"></dd>
+		</ctx>
+		<ctx :if="$page.custom.get?('year_range')">
+			<dt>Year</dt>
+			<dd :text="$if"></dd>
+		</ctx>
+	</dl>
+
+	<div :html="$page.content()"></div>
+
+	<ctx :if="$page.custom.get?('shop_item_1')">
+		<section class="related-shop">
+			<h2>Available in the shop</h2>
+			<ul>
+				<ctx item="$site.page($if)">
+					<li>
+						<a href="$ctx.item.link()">
+							<span :text="$ctx.item.title"></span>
+							<span :text="$ctx.item.custom.get('price').prefix('$')"></span>
+							<span :text="$ctx.item.custom.get('status')"></span>
+						</a>
+					</li>
+				</ctx>
+			</ul>
+		</section>
+	</ctx>
+
+	<ctx :if="$page.custom.get?('shop_item_2')">
+		<ctx item="$site.page($if)">
+			<li>
+				<a href="$ctx.item.link()">
+					<span :text="$ctx.item.title"></span>
+					<span :text="$ctx.item.custom.get('price').prefix('$')"></span>
+					<span :text="$ctx.item.custom.get('status')"></span>
+				</a>
+			</li>
+		</ctx>
+	</ctx>
+
+	<nav class="section-nav">
+		<a href="$page.parentSection().link()">← All work</a>
+	</nav>
+</main>

@@ -1,0 +1,36 @@
+<extend template="base.shtml">
+
+<title id="title" :text="$site.title"></title>
+
+<head id="head">
+</head>
+
+<main id="main">
+	<section class="featured-work">
+		<h2>Work</h2>
+		<ul class="home-grid" :loop="$site.page('work').subpages()">
+			<li>
+				<a href="$loop.it.link()">
+					<ctx :if="$loop.it.custom.get?('image')">
+						<span class="img-wrap"><img src="$site.asset($if).link()" alt="$loop.it.title" loading="lazy"></span>
+					</ctx>
+					<div class="home-card-text">
+						<span class="home-card-title" :text="$loop.it.title"></span>
+						<span class="home-card-desc" :text="$loop.it.description"></span>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<a class="see-all" href="$site.page('work').link()">All work →</a>
+	</section>
+
+	<section class="featured-shop">
+		<h2>Shop</h2>
+		<ul :loop="$site.page('shop').subpages()">
+			<li>
+				<a href="$loop.it.link()" :text="$loop.it.title"></a>
+			</li>
+		</ul>
+		<a class="see-all" href="$site.page('shop').link()">Shop →</a>
+	</section>
+</main>

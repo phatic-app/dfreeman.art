@@ -1,0 +1,18 @@
+<extend template="base.shtml">
+
+<title id="title" :text="$page.title"></title>
+
+<head id="head">
+</head>
+
+<main id="main">
+	<h1 :text="$page.title"></h1>
+	<ul class="category-grid" :loop="$page.subpages()">
+		<li>
+			<a href="$loop.it.link()">
+				<span :text="$loop.it.title"></span>
+				<span :text="$loop.it.description"></span>
+			</a>
+		</li>
+	</ul>
+</main>

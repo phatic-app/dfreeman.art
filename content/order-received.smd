@@ -1,0 +1,11 @@
+---
+.title = "Thanks!",
+.date = @date("2025-01-01T00:00:00"),
+.author = "Danielle Freeman",
+.layout = "page.shtml",
+.draft = false,
+---
+
+Thanks for your purchase! Expect an email from me within 24 hours to confirm your order and arrange shipping.
+
+Questions? Reach out via the [contact page](/contact/).

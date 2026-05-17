@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html data-theme="dark" style="background:#736058">
+	<head id="head">
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1">
+		<title id="title"><super> — <ctx :text="$site.title"></ctx></title>
+		<link type="text/css" rel="stylesheet" href="$site.asset('style.css').link()">
+		<super>
+	</head>
+	<body id="body">
+		<canvas id="grain"></canvas>
+		<header>
+			<div class="site-wrap">
+				<div class="header-row">
+					<a class="site-title" href="$site.page('').link()" :text="$site.title"></a>
+				</div>
+				<nav>
+					<a href="$site.page('work').link()">Work</a>
+					<a href="$site.page('shop').link()">Shop</a>
+					<a href="$site.page('about').link()">About</a>
+					<a href="$site.page('commissions').link()">Commissions</a>
+					<a href="$site.page('contact').link()">Contact</a>
+				</nav>
+			</div>
+		</header>
+		<div class="site-wrap">
+			<main id="main">
+				<super>
+			</main>
+			<footer>
+			</footer>
+		</div>
+		<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var canvas = document.getElementById('grain');
+  if (canvas) {
+    var w = canvas.width = window.innerWidth;
+    var h = canvas.height = window.innerHeight;
+    var ctx = canvas.getContext('2d');
+    var img = ctx.createImageData(w, h);
+    var data = img.data;
+    for (var j = 0; j < data.length; j += 4) {
+      var v = Math.random() * 255 | 0;
+      data[j] = data[j+1] = data[j+2] = v;
+      data[j+3] = 255;
+    }
+    ctx.putImageData(img, 0, 0);
+  }
+});
+		</script>
+	</body>
+</html>

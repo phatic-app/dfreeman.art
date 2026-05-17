@@ -1,0 +1,27 @@
+<extend template="base.shtml">
+
+<title id="title" :text="$page.title"></title>
+
+<head id="head">
+</head>
+
+<main id="main">
+	<img class="contact-hero" src="$site.asset('el-art-fest.jpg').link()" alt="Danielle Freeman">
+
+	<h1 :text="$page.title"></h1>
+
+	<div class="contact-card">
+		<dl class="contact-details">
+			<dt>Email</dt>
+			<dd><a href="mailto:dferr2019@gmail.com">dferr2019@gmail.com</a></dd>
+
+			<dt>Phone</dt>
+			<dd><a href="tel:+12317093441">(231) 709-3441</a></dd>
+
+			<dt>Location</dt>
+			<dd>Okemos, MI</dd>
+		</dl>
+	</div>
+
+	<div :html="$page.content()"></div>
+</main>

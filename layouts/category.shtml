@@ -1,0 +1,27 @@
+<extend template="base.shtml">
+
+<title id="title" :text="$page.title"></title>
+
+<head id="head">
+</head>
+
+<main id="main">
+	<h1 :text="$page.title"></h1>
+	<ul class="product-grid" :loop="$page.subpages()">
+		<li>
+			<a href="$loop.it.link()">
+				<ctx :if="$loop.it.custom.get?('image')">
+					<span class="img-wrap"><img src="$site.asset($if).link()" alt="$loop.it.title" loading="lazy"></span>
+				</ctx>
+				<div class="product-card-text">
+					<span class="product-card-title" :text="$loop.it.title"></span>
+					<span class="product-card-price" :text="$loop.it.custom.get('price').prefix('$')"></span>
+					<span class="product-card-status" :text="$loop.it.custom.get('status')"></span>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<nav class="section-nav">
+		<a href="$page.parentSection().link()">← Shop</a>
+	</nav>
+</main>

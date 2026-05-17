@@ -1,0 +1,19 @@
+---
+.title = "Painting X",
+.date = @date("2025-01-01T00:00:00"),
+.author = "Danielle Freeman",
+.layout = "product.shtml",
+.description = "Original oil on panel",
+.tags = ["original", "oil"],
+.draft = false,
+.custom = {
+    .price = "Coming soon!",
+    .status = "available",
+    .medium = "Oil on panel",
+    .dimensions = "12×16 in",
+    .buy_url = "https://venmo.com/u/dfreemanart",
+    .image = "still-life.jpg",
+},
+---
+
+Product description goes here.

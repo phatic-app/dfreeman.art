@@ -1,0 +1,19 @@
+---
+.title = "Bowl Y",
+.date = @date("2025-01-01T00:00:00"),
+.author = "Danielle Freeman",
+.layout = "product.shtml",
+.description = "Handthrown stoneware bowl",
+.tags = ["ceramic", "functional"],
+.draft = false,
+.custom = {
+    .price = "Coming soon!",
+    .status = "available",
+    .medium = "Stoneware",
+    .dimensions = "5×3 in",
+    .buy_url = "https://venmo.com/u/dfreemanart",
+    .image = "stitch-flower.jpg",
+},
+---
+
+Product description goes here.

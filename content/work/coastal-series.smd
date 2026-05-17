@@ -1,0 +1,17 @@
+---
+.title = "Butterfly Series",
+.date = @date("2024-06-01T00:00:00"),
+.author = "Danielle Freeman",
+.layout = "series.shtml",
+.description = "Coming Soon! - Butterfly series - Inspired by the MSU Museum's Natural Science collection.",
+.tags = ["oil", "landscape"],
+.draft = false,
+.custom = {
+    .year_range = "2023–2024",
+    .medium = "Oil on panel",
+    .shop_item_1 = "shop/prints/coastal-3",
+    .image = "bird.jpg",
+},
+---
+
+Series description goes here.

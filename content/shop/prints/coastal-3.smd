@@ -1,0 +1,21 @@
+---
+.title = "Coastal Print No. 3",
+.date = @date("2025-03-01T00:00:00"),
+.author = "Danielle Freeman",
+.layout = "product.shtml",
+.description = "Risograph print, 11×17, edition of 50",
+.tags = ["print", "limited-edition"],
+.draft = false,
+.custom = {
+    .price = "Coming soon!",
+    .status = "available",
+    .edition_size = "50",
+    .medium = "Risograph print",
+    .dimensions = "11×17 in",
+    .buy_url = "https://venmo.com/u/dfreemanart",
+    .series = "work/coastal-series",
+    .image = "bird.jpg",
+},
+---
+
+Product description goes here.

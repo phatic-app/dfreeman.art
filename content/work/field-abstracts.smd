@@ -1,0 +1,16 @@
+---
+.title = "Dichroic Mosaics",
+.date = @date("2022-03-01T00:00:00"),
+.author = "Danielle Freeman",
+.layout = "series.shtml",
+.description = "Coming Soon! - Made from specially coated glass that shifts color and reflects different hues depending on the angle and lighting.",
+.tags = ["abstract", "linen"],
+.draft = false,
+.custom = {
+    .year_range = "2021–2022",
+    .medium = "Oil on linen",
+    .image = "mosaic-girl.jpg",
+},
+---
+
+Series description goes here.

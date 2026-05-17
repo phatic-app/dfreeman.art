@@ -1,0 +1,63 @@
+<extend template="base.shtml">
+
+<title id="title" :text="$page.title"></title>
+
+<head id="head">
+</head>
+
+<main id="main">
+	<ctx :if="$page.custom.get?('image')">
+		<img class="product-image" src="$site.asset($if).link()" alt="$page.title">
+	</ctx>
+
+	<h1 :text="$page.title"></h1>
+
+	<dl class="product-meta">
+		<ctx :if="$page.custom.get?('medium')">
+			<dt>Medium</dt>
+			<dd :text="$if"></dd>
+		</ctx>
+		<ctx :if="$page.custom.get?('dimensions')">
+			<dt>Dimensions</dt>
+			<dd :text="$if"></dd>
+		</ctx>
+		<ctx :if="$page.custom.get?('edition_size')">
+			<dt>Edition</dt>
+			<dd :text="$if.prefix('Edition of ')"></dd>
+		</ctx>
+		<dt>Price</dt>
+		<dd :text="$page.custom.get('price').prefix('$')"></dd>
+	</dl>
+
+	<div :html="$page.content()"></div>
+
+	<ctx :if="$page.custom.get('status').contains('available')">
+		<a class="buy-button" href="$page.custom.get('buy_url')" target="_blank" rel="noopener"
+		   onclick="setTimeout(function(){window.location='/order-received/'},1500)">
+			Buy — $<ctx :text="$page.custom.get('price')"></ctx>
+		</a>
+	</ctx>
+	<ctx :if="$page.custom.get('status').contains('sold-out')">
+		<p class="sold-out">Sold out</p>
+	</ctx>
+	<ctx :if="$page.custom.get('status').contains('made-to-order')">
+		<a class="buy-button" href="$site.page('commissions').link()">Inquire →</a>
+	</ctx>
+
+	<ctx :if="$page.custom.get?('series')">
+		<nav class="series-backlink">
+			<ctx series="$site.page($if)">
+				<a href="$ctx.series.link()">← <span :text="$ctx.series.title"></span></a>
+			</ctx>
+		</nav>
+	</ctx>
+
+	<nav class="section-nav">
+		<ctx :if="$page.prevPage?()">
+			<a href="$if.link()">← <span :text="$if.title"></span></a>
+		</ctx>
+		<ctx :if="$page.nextPage?()">
+			<a href="$if.link()"><span :text="$if.title"></span> →</a>
+		</ctx>
+	</nav>
+</main>

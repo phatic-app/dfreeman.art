@@ -1,0 +1,19 @@
+---
+.title = "Amber Panel No. 1",
+.date = @date("2025-04-01T00:00:00"),
+.author = "Danielle Freeman",
+.layout = "product.shtml",
+.description = "Leaded stained glass panel, amber and rust tones",
+.tags = ["glass", "panel"],
+.draft = false,
+.custom = {
+    .price = "Coming soon!",
+    .status = "available",
+    .medium = "Leaded stained glass",
+    .dimensions = "10×14 in",
+    .buy_url = "https://buy.stripe.com/placeholder",
+    .image = "mosaic-girl.jpg",
+},
+---
+
+Warm amber and rust glass, leaded in a geometric field pattern. Hangs in a window or stands freestanding.

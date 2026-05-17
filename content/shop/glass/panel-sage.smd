@@ -1,0 +1,19 @@
+---
+.title = "Sage & Honey Panel",
+.date = @date("2025-05-01T00:00:00"),
+.author = "Danielle Freeman",
+.layout = "product.shtml",
+.description = "Stained glass panel in sage, honey, and clear glass",
+.tags = ["glass", "panel"],
+.draft = false,
+.custom = {
+    .price = "Coming soon!",
+    .status = "available",
+    .medium = "Leaded stained glass",
+    .dimensions = "12×18 in",
+    .buy_url = "https://venmo.com/u/dfreemanart",
+    .image = "mosaic-girl.jpg",
+},
+---
+
+Organic repeating form in sage and honey glass. Leaded with copper foil detail at edges.
